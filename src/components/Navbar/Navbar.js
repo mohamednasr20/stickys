@@ -5,7 +5,7 @@ import './navbar.css';
 
 const MyNavbar = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg">
       <Container>
         <Navbar.Brand className="brand" href="#home">
           <img src={logo} alt="logo" />
@@ -18,8 +18,8 @@ const MyNavbar = () => {
             <Nav.Link href="#link">ABOUT US</Nav.Link>
             <Nav.Link href="#link">CATERING</Nav.Link>
           </Nav>
-          <Button className="p-0" variant="secondary">
-            <Nav.Link href="#link">CATERING</Nav.Link>
+          <Button className="p-0" variant="warning">
+            <Nav.Link href="#link">ORDER NOW</Nav.Link>
           </Button>
         </Navbar.Collapse>
       </Container>
