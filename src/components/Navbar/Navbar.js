@@ -1,26 +1,31 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import './navbar.css';
 
 const MyNavbar = () => {
   return (
     <Navbar expand="lg">
       <Container>
-        <Navbar.Brand className="brand" href="#home">
-          <img src={logo} alt="logo" />
-        </Navbar.Brand>
+        <NavLink to="/">
+          <Navbar.Brand className="brand">
+            <img src={logo} alt="logo" />
+          </Navbar.Brand>
+        </NavLink>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">OUR MENU</Nav.Link>
-            <Nav.Link href="#link">LOCATIONS</Nav.Link>
-            <Nav.Link href="#link">ABOUT US</Nav.Link>
-            <Nav.Link href="#link">CATERING</Nav.Link>
+            <NavLink to="/menu">OUR MENU</NavLink>
+            <NavLink to="/locations">LOCATIONS</NavLink>
+            <NavLink to="/about">ABOUT US</NavLink>
+            <NavLink to="/catering">CATERING</NavLink>
           </Nav>
-          <Button className="p-0" variant="warning">
-            <Nav.Link href="#link">ORDER NOW</Nav.Link>
-          </Button>
+
+          <NavLink className="btn-link" to="/order">
+            <Button variant="warning">ORDER NOW</Button>
+          </NavLink>
         </Navbar.Collapse>
       </Container>
     </Navbar>
