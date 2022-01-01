@@ -11,6 +11,19 @@
 }
 
 .App {
-  background-color: var(--primary_color);
+  position: relative;
+  background-color: #fff;
   font-family: 'Titillium Web', sans-serif;
+}
+
+.App::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 70vw;
+  height: 80vh;
+  background-color: var(--primary_color);
+  transform: skewX(-2deg);
+  border-radius: 25px;
 }
