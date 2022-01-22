@@ -1,0 +1,48 @@
+.Header-slider {
+  position: relative;
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+
+.carousel-caption {
+  transform: translateY(200px);
+  max-width: fit-content;
+  margin-left: auto;
+  text-align: left;
+  padding-right: 6rem;
+}
+
+.Header-slider h4 {
+  color: #fff;
+  background: var(--primary_color);
+  padding: 0.25rem 0;
+}
+
+.Header-slider p {
+  color: #000;
+}
+
+.Header-slider img {
+  width: 80%;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+/* .carousel-control-prev,
+.carousel-control-next {
+  transform: translateY(250px);
+}
+
+.carousel-control-next {
+  right: 520px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: yellow;
+  border-radius: 50%;
+} */
