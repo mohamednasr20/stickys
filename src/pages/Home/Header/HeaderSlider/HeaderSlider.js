@@ -13,7 +13,7 @@ const HeaderSlider = () => {
         <img className="d-block w-70" src={PoppersSlider} alt="First slide" />
         <Carousel.Caption>
           <p>1 of 4</p>
-          <h4>CRUNCHY FINGERS</h4>
+          <h4>BITE POPPERS</h4>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -27,14 +27,14 @@ const HeaderSlider = () => {
         <img className="d-block w-70" src={SandwichSlider} alt="Third slide" />
         <Carousel.Caption>
           <p>3 of 4</p>
-          <h4>CRUNCHY FINGERS</h4>
+          <h4>CLASSIC SANDWICH</h4>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img className="d-block w-70" src={ThighsSlider} alt="Fouth slide" />
         <Carousel.Caption>
           <p>4 of 4</p>
-          <h4>CRUNCHY FINGERS</h4>
+          <h4>CRUNCHY THIGHS</h4>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
